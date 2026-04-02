@@ -1,0 +1,23 @@
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+ℹ These terms could not be mapped per the controlled terminology: "Randomized".
+SDTM DS Domain creation complete.
+Rows: 850 
+Columns: 12 
+Files saved: 01_create_ds_domain.rds, 02_create_ds_domain.csv
