@@ -1,1 +1,49 @@
-Fatal error: cannot open file 'question_3_tlg/02_create_visualizations.R': No such file or directory
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Saved: question_3_tlg/ae_severity_by_arm.png
+Top 10 AE terms:
+ [1] "PRURITUS"                    "APPLICATION SITE PRURITUS"  
+ [3] "ERYTHEMA"                    "APPLICATION SITE ERYTHEMA"  
+ [5] "RASH"                        "APPLICATION SITE DERMATITIS"
+ [7] "APPLICATION SITE IRRITATION" "DIZZINESS"                  
+ [9] "DIARRHOEA"                   "SINUS BRADYCARDIA"          
+attr(,"label")
+[1] "Reported Term for the Adverse Event"
+First 5 rows of AETERM × ACTARM count subjects and 95% CI:
+# A tibble: 6 × 7
+  AETERM                      ACTARM              n_subj N_arm   est    lo    hi
+  <chr>                       <chr>                <int> <int> <dbl> <dbl> <dbl>
+1 APPLICATION SITE DERMATITIS Placebo                  5    86  5.81  2.51 12.9 
+2 APPLICATION SITE DERMATITIS Xanomeline High Do…      7    72  9.72  4.79 18.7 
+3 APPLICATION SITE DERMATITIS Xanomeline Low Dose      9    96  9.38  5.01 16.9 
+4 APPLICATION SITE ERYTHEMA   Placebo                  3    86  3.49  1.19  9.76
+5 APPLICATION SITE ERYTHEMA   Xanomeline High Do…     14    72 19.4  12.0  30.0 
+6 APPLICATION SITE ERYTHEMA   Xanomeline Low Dose     13    96 13.5   8.09 21.8 
+Error in `mutate()`:
+ℹ In argument: `ACTARM = factor(ACTARM, levels = arm_order)`.
+Caused by error:
+! object 'arm_order' not found
+Backtrace:
+     ▆
+  1. ├─top10_data %>% ...
+  2. ├─dplyr::mutate(...)
+  3. ├─dplyr:::mutate.data.frame(...)
+  4. │ └─dplyr:::mutate_cols(.data, dplyr_quosures(...), by)
+  5. │   ├─base::withCallingHandlers(...)
+  6. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
+  7. │     └─mask$eval_all_mutate(quo)
+  8. │       └─dplyr (local) eval()
+  9. ├─base::factor(ACTARM, levels = arm_order)
+ 10. └─base::.handleSimpleError(...)
+ 11.   └─dplyr (local) h(simpleError(msg, call))
+ 12.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+Execution halted
