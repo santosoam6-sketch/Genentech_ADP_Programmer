@@ -85,6 +85,9 @@ sev_data <- teae %>%
   left_join(n_by_arm, by = "ACTARM") %>%
   mutate(AESEV = factor(AESEV, levels = c("MILD", "MODERATE", "SEVERE")))
 
+#Order arms for x-axis
+arm_order <- c("Placebo", "Xanomeline Low Dose", "Xanomeline High Dose")
+
 p1 <- ggplot(sev_data, aes(x = ACTARM, y = n_subj, fill = AESEV)) +
   geom_col(
     position = position_dodge(width = 0.7),
