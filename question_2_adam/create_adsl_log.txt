@@ -1,0 +1,11 @@
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+ADSL creation complete.
+Rows: 306 
+Columns: 37 
+Files saved: 02_create_ADaM_ADSL.rds, 02_create_ADaM_ADSL.csv
