@@ -25,7 +25,6 @@ Solution for **Question 1: SDTM DS Domain Creation**.
 
 ---
 
-`question_2_adam/` 
 ### `question_2_adam/`
 Solution for **Question 2: ADaM ADSL Dataset Creation**.
 
