@@ -66,4 +66,15 @@ Solution for **Question 4: GenAI Clinical Data Assistant**.
 | `adae.csv` | AE dataset used as input for `test_script.py` |
 | `adae_data.R` | Supporting R script used to export the AE dataset for Python use |
 
-**To run:** From the `question_4_genai/` directory, run `python test_script.py`. Requires Python ≥ 3.9 with `pandas` and `openai` installed. An OpenAI API key must be set as the environment variable `OPENAI_API_KEY`.
+**To run:** From the `question_4_genai/` directory, run `python test_script.py`. Requires Python ≥ 3.9 with `pandas` installed. 
+**Notes:**:
+This solution maps natural language questions to the relevant AE dataset variable, applies a Pandas filter, and returns the count of unique subjects and matching subject IDs.
+
+I chose a Claude-style parsing approach, but since no API key was used, I implemented a mock version using keyword-based simulation. This preserves the full logic flow:
+- parse the user question
+- identify the target column
+- identify the filter value
+- execute the filter on the dataset
+- return matching subjects
+
+No external API key is required to run this version.
