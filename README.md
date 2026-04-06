@@ -14,15 +14,15 @@ This repository contains folders and files for the ADP Programmer screening inte
 This folder contains the solution for Question 1: SDTM DS Domain Creation.
 
 Contents:
-`01_create_ds_domain.R` : Main R script used to create the DS domain from the raw disposition data.
-`01_create_ds_domain.csv / 01_create_ds_domain.rds` : Output dataset files for the derived DS domain.
-`create_ds_domain_log.txt` : Log/output file included as evidence that the script runs error-free.
-`study_ct.csv` : Controlled terminology file used to support the derivation.
+- `01_create_ds_domain.R` : Main R script used to create the DS domain from the raw disposition data.
+- `01_create_ds_domain.csv / 01_create_ds_domain.rds` : Output dataset files for the derived DS domain.
+- `create_ds_domain_log.txt` : Log/output file included as evidence that the script runs error-free.
+- `study_ct.csv` : Controlled terminology file used to support the derivation.
 
 `question_2_adam/`
 This folder contains the solution for Question 2: ADaM ADSL Dataset Creation.
 
 Contents:
-`create_adsl.R` : Main R script used to create the ADSL dataset from SDTM source data.
-`02_create_ADaM_ADSL.csv / 02_create_ADaM_ADSL.rds` : Output dataset files for the derived ADSL dataset.
-`create_adsl_log.txt` : Log/output file included as evidence that the script runs error-free.
+- `create_adsl.R` : Main R script used to create the ADSL dataset from SDTM source data.
+- `02_create_ADaM_ADSL.csv / 02_create_ADaM_ADSL.rds` : Output dataset files for the derived ADSL dataset.
+- `create_adsl_log.txt` : Log/output file included as evidence that the script runs error-free.
