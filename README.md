@@ -10,14 +10,20 @@ This repository contains folders and files for the ADP Programmer screening inte
 - `README.md` : repository overview and notes
 
 ## Folder Contents
-`question_1_sdtm/` \
-This folder contains the solution for Question 1: SDTM DS Domain Creation.
+### `question_1_sdtm/`
+Solution for **Question 1: SDTM DS Domain Creation**.
 
-Contents:
-- `01_create_ds_domain.R` : Main R script used to create the DS domain from the raw disposition data.
-- `01_create_ds_domain.csv / 01_create_ds_domain.rds` : Output dataset files for the derived DS domain.
-- `create_ds_domain_log.txt` : Log/output file as evidence that the script runs error-free.
-- `study_ct.csv` : Controlled terminology file used to support the derivation.
+| File | Description |
+|------|-------------|
+| `01_create_ds_domain.R` | Main R script to create the DS domain from raw disposition data |
+| `01_create_ds_domain.csv` | Output DS domain dataset (CSV format) |
+| `01_create_ds_domain.rds` | Output DS domain dataset (RDS format) |
+| `create_ds_domain_log.txt` | Script execution log confirming error-free run |
+| `study_ct.csv` | Controlled terminology file used to support the derivation |
+
+**To run:** Open `01_create_ds_domain.R` and run from the `question_1_sdtm/` directory. Requires R ≥ 4.1 with `tidyverse` and `haven` installed.
+
+---
 
 `question_2_adam/` \
 This folder contains the solution for Question 2: ADaM ADSL Dataset Creation.
