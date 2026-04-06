@@ -26,30 +26,45 @@ Solution for **Question 1: SDTM DS Domain Creation**.
 ---
 
 `question_2_adam/` \
-This folder contains the solution for Question 2: ADaM ADSL Dataset Creation.
+### `question_2_adam/`
+Solution for **Question 2: ADaM ADSL Dataset Creation**.
 
-Contents:
-- `create_adsl.R` : Main R script used to create the ADSL dataset from SDTM source data.
-- `02_create_ADaM_ADSL.csv / 02_create_ADaM_ADSL.rds` : Output dataset files for the derived ADSL dataset.
-- `create_adsl_log.txt` : Log/output file as evidence that the script runs error-free.
+| File | Description |
+|------|-------------|
+| `create_adsl.R` | Main R script to create the ADSL dataset from SDTM source data |
+| `02_create_ADaM_ADSL.csv` | Output ADSL dataset (CSV format) |
+| `02_create_ADaM_ADSL.rds` | Output ADSL dataset (RDS format) |
+| `create_adsl_log.txt` | Script execution log confirming error-free run |
 
-`question_3_tlg` \
-This folder contains the solution for Question 3: TLG: Adverse Events Reporting. 
+**To run:** Open `create_adsl.R` and run from the `question_2_adam/` directory. Requires R ≥ 4.1 with `tidyverse`, `haven`, and `admiral` installed.
 
-Contents: 
-- `01_create_ae_summary_table.R` : Script used to create the treatment-emergent adverse event summary table.
-- `02_create_visualizations.R` : Script used to create the adverse event visualizations.
-- `ae_summary_table.html` : Output summary table.
-- `ae_severity_by_arm.png` : Visualization of AE severity distribution by treatment arm.
-- `ae_top10.png` : Visualization of the top 10 most frequent adverse events.
-- `01_create_ae_summary_table_log.txt` : Log/output file for the summary table script.
-- `02_create_visualizations_log.txt`: Log/output file for the visualization script.
+---
 
-`question_4_genai/` \
-This folder contains the solution for Question 4: GenAI Clinical Data Assistant.
+### `question_3_tlg/`
+Solution for **Question 3: TLG — Adverse Events Reporting**.
 
-Contents: 
-- `clinical_data_agent.py` : Main Python script implementing the clinical data assistant logic.
-- `test_script.py` : Test script that runs 3 example queries and prints the results.
-- `adae.csv` : AE dataset used for `test_script.py`.
-- `adae_data.R` : Supporting script used to export the AE dataset for Python use.
+| File | Description |
+|------|-------------|
+| `01_create_ae_summary_table.R` | Script to create the treatment-emergent AE summary table |
+| `02_create_visualizations.R` | Script to create AE visualizations |
+| `ae_summary_table.html` | Output summary table (open in any browser) |
+| `ae_severity_by_arm.png` | Visualization of AE severity distribution by treatment arm |
+| `ae_top10.png` | Visualization of the top 10 most frequent adverse events |
+| `01_create_ae_summary_table_log.txt` | Execution log for the summary table script |
+| `02_create_visualizations_log.txt` | Execution log for the visualizations script |
+
+**To run:** Run each script independently from the `question_3_tlg/` directory. Requires R ≥ 4.1 with `tidyverse`, `gt`, and `ggplot2` installed.
+
+---
+
+### `question_4_genai/`
+Solution for **Question 4: GenAI Clinical Data Assistant**.
+
+| File | Description |
+|------|-------------|
+| `clinical_data_agent.py` | Main Python script implementing the clinical data assistant logic |
+| `test_script.py` | Test script that runs 3 example queries and prints results |
+| `adae.csv` | AE dataset used as input for `test_script.py` |
+| `adae_data.R` | Supporting R script used to export the AE dataset for Python use |
+
+**To run:** From the `question_4_genai/` directory, run `python test_script.py`. Requires Python ≥ 3.9 with `pandas` and `openai` installed. An OpenAI API key must be set as the environment variable `OPENAI_API_KEY`.
