@@ -10,7 +10,7 @@ This repository contains folders and files for the ADP Programmer screening inte
 - `README.md` : repository overview and notes
 
 ## Folder Contents
-`question_1_sdtm/`
+`question_1_sdtm/` /n
 This folder contains the solution for Question 1: SDTM DS Domain Creation.
 
 Contents:
@@ -19,7 +19,7 @@ Contents:
 - `create_ds_domain_log.txt` : Log/output file included as evidence that the script runs error-free.
 - `study_ct.csv` : Controlled terminology file used to support the derivation.
 
-`question_2_adam/`
+`question_2_adam/` /n
 This folder contains the solution for Question 2: ADaM ADSL Dataset Creation.
 
 Contents:
